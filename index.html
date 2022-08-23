@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <base href="/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DTUniMaps - Bản đồ số Đại học Duy Tân</title>
+    <meta
+      name="description"
+      content="DTUniMaps - Ứng dụng bản đồ số mô phỏng bản đồ trường Đại Học Duy Tân - Đà Nẵng giúp sinh viên và giảng viên tìm kiếm và dẫn đường dễ dàng đến các cơ sở trường"
+    />
+    <link
+      rel="icon"
+      href="icons/430df173203217e957785895de808a54.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="icons/5c3199be7839b06fe65e67fbe2d418ee.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="926e4524987a1cc924ceb933d1eae5f4.png"
+      sizes="180x180"
+    />
+    <link rel="stylesheet" href="style.css">
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="revisit-after" content="1 days" />
+    <meta http-equiv="content-language" content="vi" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <link rel="canonical" href="https://dtunimaps.com/" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="DTUniMaps - Ứng dụng bản đồ số mô phỏng bản đồ trường Đại Học Duy Tân"
+    />
+    <meta
+      property="og:description"
+      content="DTUniMaps - Ứng dụng bản đồ số mô phỏng bản đồ trường Đại Học Duy Tân - Đà Nẵng giúp sinh viên và giảng viên tìm kiếm và dẫn đường dễ dàng đến các cơ sở trường"
+    />
+    <meta property="og:url" itemprop="url" content="https://dtunimaps.com/" />
+    <meta
+      property="og:site_name"
+      content="Ứng dụng bản đồ số mô phỏng bản đồ trường Đại Học Duy Tân"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/huynhphvan/image/upload/v1660796628/bg-dtunimaps.png"
+    />
+    <meta property="og:image" itemprop="thumbnailUrl" content="https://res.cloudinary.com/huynhphvan/image/upload/v1660796628/bg-dtunimaps.png" />
+    <meta property="og:image:width" content="527">
+    <meta property="og:image:height" content="300">
+    <meta content="www.google.com, www.google.com.vn, www.yahoo.com, www.msn.com, www.alltheweb.com, www.alexa.com, www.altaVista.com, www.aol.com, www.infoseek.com, www.excite.com, www.hotbot.com, www.lycos.com, www.magellan.com, www.looksmart.com, www.cnet.com, www.voila.com, www.netscape.com, www.nomade.com, www.bing.com" name="Search Engines">
+    <meta content="Regional, Asia, Vietnam, University" name="Classification">
+    <meta content="Global" name="distribution">
+    <meta content="Phuoc Huynh Van" name="OWNER">
+    <meta content="Phuoc Huynh Van" name="AUTHOR">
+    <meta content="DOCUMENT" name="RESOURCE-TYPE">
+    <meta content="INDEX, FOLLOW" name="ROBOTS">
+    <meta content="1 DAYS" name="REVISIT-AFTER">
+    <meta content="GENERAL" name="RATING">
+    <meta name="keywords" content="dtunimaps, bản đồ số, dtu, duytan, dai hoc duy tan, mydtu, đại học, Duy T&#226;n, đại học Duy T&#226;n, Đại Học Từ Xa, Du Học tại chỗ, đ&#224;o tạo Bằng 2, đ&#224;o tạo Tiến sĩ, đ&#224;o tạo Thạc Sỹ, Li&#234;n th&#244;ng, chương tr&#236;nh ti&#234;n tiến, Tuyển Sinh"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/huynhphvan/image/upload/v1660796628/bg-dtunimaps.png" />
+    <!-- Scripts -->
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K9JRH2S');</script>
+  <!-- End Google Tag Manager -->
+    <script>
+      !(function () {
+        "use strict";
+        const e =
+          "undefined" != typeof window ? window.navigator?.userAgent : void 0;
+        const t = !(
+          !e ||
+          ((n = e),
+          !n.match(/AppleWebKit\//) ||
+            n.match(/Chrome\//) ||
+            n.match(/Chromium\//))
+        );
+        var n;
+        function o() {
+          Array.from(document.querySelectorAll("svg")).forEach((e) => {
+            const t = e.style.display || "block";
+            (e.style.display = "none"), e.offsetHeight, (e.style.display = t);
+          });
+        }
+        function i() {
+          Array.from(document.querySelectorAll("video")).forEach((e) => {
+            window.requestAnimationFrame(() => {
+              (e.style.position = "fixed"),
+                window.setTimeout(() => {
+                  e.style.position = "";
+                });
+            });
+          });
+        }
+        function r(e) {
+          if (0 !== e.getBoundingClientRect().width) return;
+          const t = Array.from(e.children).map((e) => e);
+          t.forEach((e, n) => {
+            if (e.hasAttribute("data-foreign-object-container"))
+              (e.style.transformOrigin = ""),
+                (e.style.transform = ""),
+                (e.style.clipPath = "");
+            else {
+              const o = document.createElement("div");
+              o.setAttribute("data-foreign-object-container", ""),
+                e.insertAdjacentElement("beforebegin", o),
+                e.remove(),
+                o.append(e),
+                (t[n] = o);
+            }
+          });
+          const n = e.closest("svg")?.getBoundingClientRect(),
+            o = e.getScreenCTM();
+          if (!o || !n) return;
+          const { a: i, b: r, c: a, d: c, e: s, f: d } = o,
+            f = e.x?.baseVal.value ?? 0,
+            l = e.y?.baseVal.value ?? 0;
+          t.forEach((e) => {
+            if (!e.hasAttribute("data-foreign-object-container")) return;
+            const { style: t } = e;
+            (t.transformOrigin = `${-f}px ${-l}px`),
+              (t.transform = `matrix(${i}, ${r}, ${a}, ${c}, ${s - n.left}, ${
+                d - n.top
+              })`);
+            const o = (n.top - d) / i,
+              u = (n.left - s) / i,
+              m = o + n.height / i,
+              p = u + n.width / i;
+            t.clipPath = `polygon(${u}px ${o}px, ${p}px ${o}px, ${p}px ${m}px, ${u}px ${m}px)`;
+          });
+        }
+        function a() {
+          const e = document.querySelectorAll("foreignObject");
+          Array.from(e).forEach(r);
+        }
+        [
+          function () {
+            t &&
+              (window.addEventListener("resize", o),
+              window.addEventListener("DOMContentLoaded", o));
+          },
+          function () {
+            t &&
+              (window.addEventListener("resize", a),
+              window.addEventListener("DOMContentLoaded", a));
+          },
+          function () {
+            t && window.addEventListener("DOMContentLoaded", i);
+          },
+        ].forEach((e) => e());
+      })();
+    </script>
+    <script>
+      window.C_CAPTCHA_IMPLEMENTATION = "RECAPTCHA";
+    </script>
+    <script>
+      window.C_CAPTCHA_KEY = "6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO";
+    </script>
+    
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9JRH2S"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root">
+    <section id="page-0" style="z-index:0;overflow:hidden;display:grid;position:relative;align-items:center;">
+    <div id="as7MsJVpdxNp1WMK" style="background-color:#d3efa4;transform:scale(1, 1);overflow:hidden;width:100%;opacity:1.0;height:100%;top:0%;left:0%;position:absolute;">
+    </div>
+    <div id="Cc3z5mddCfTEpCkP">
+    <div id="hH1BFEbM3NskRDwk">
+    <div id="Ddtb3xBh8ohSdhKa" style="padding-top:73.81818182%;transform:rotate(0deg);">
+    <div id="UIVu2QGr6QyfceRB" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="clK7Qorwc2g3PjJS" style="width:100%;opacity:1.0;height:100%;">
+    <div id="j0QYV7dKxMjiXQKS" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="KxhXa5LPJFnSEzW4" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/1032b85ad79baf2f7e01d79dbcfd802c.svg" alt="Handdrawn Loose Doodle Buildable Theme Park" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="v4EjtQhhIOKeFkDK">
+    <div id="OFyCAuDEEJ9TDaZd" style="padding-top:173.50157729%;transform:rotate(0deg);">
+    <div id="djkXPeOmYp2wOnrW" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="rA1fVI4kIbhUbvfT" style="width:100%;opacity:1.0;height:100%;">
+    <div id="Kp0CsCBQ3GGN9iIp" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="PIWGLwgezGUVEKV4" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/db5d8b8ed7c3599b9bf0874a49809540.svg" alt="Handdrawn Loose Doodle Popcorn Cart" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="qjDRBdNxbeXrBxhg">
+    <div id="nSvRu2KGBu97pN8v" style="padding-top:202.20588235%;transform:rotate(0deg);">
+    <div id="p7Ve9GbLN1ojZvBx" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="XVNpGZm8YsIpjLwm" style="width:100%;opacity:1.0;height:100%;">
+    <div id="G74wbZnMqMkuGw3i" style="transform:scale(-1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="HbjBAsOLmVo3K17F" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/c6aaf35f31443bf00e7de964ba5a11b9.svg" alt="Handdrawn Loose Doodle Happy Man" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="tSA30NfEvxflDwDY">
+    <div id="L8RQjz7xXOdjqAsH" style="padding-top:134.47432763%;transform:rotate(-13.58750911deg);">
+    <div id="nqwFOz3uBJGqh6tP" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="RwAczj8Pwk7oJQan" style="width:100%;opacity:1.0;height:100%;">
+    <div id="UI9LDV9iXbYjmLZj" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="JOi5YXKqUspaGj9S" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/4f67b0a8eac738d4ea796538b9daa1f3.svg" alt="Freeform Halftone Yellow Bluetooth Headphones" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="Cr3SYlQG0y25D0dU">
+    <div id="nlwtgeEsM8HMbD0a" style="padding-top:152.35457064%;transform:rotate(0deg);">
+    <div id="qkmOm9Rex2VcjH5a" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="JtjSefSHXQSfKhaQ" style="width:100%;opacity:1.0;height:100%;">
+    <div id="x6bwOSF3m0N9Sjag" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="OTbsCrhcCSwZ01KA" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/67e1c157a3b1479f0af49298191af0f5.svg" alt="Handdrawn Loose Doodle Happy Girl" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="adLtN3o7VDBDWKqh">
+    <div id="XTLtbeClItoVwPAl" style="padding-top:68.05157593%;transform:rotate(0deg);">
+    <div id="mTJlGjp1M5QrV48g" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="A3JXwogFVdzLlWub" style="width:100%;opacity:1.0;height:100%;">
+    <div id="GJhpOF2q3AbfEHpD" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="qnIY1GH0LhJeMqZJ" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/2a8bc7420728d37de6489b8420d24dee.svg" alt="Handdrawn Loose Doodle Spinning Ride" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="T0Xg83kuBxH5Ftz4">
+    <div id="C8MFWqenA3liS2X1" style="padding-top:199.27536232%;transform:rotate(0deg);">
+    <div id="bQgFHLdgNwRFBW2X" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="xXoL75QYjGzMyN3T" style="width:100%;opacity:1.0;height:100%;">
+    <div id="XygPGxwxifhbbQaq" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="DThVO1Wl81kQhgor" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/d25028891f74fc763f46b7c5b1183bf4.svg" alt="Handdrawn Loose Doodle Man" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="t5n9ZrW3hSk9FFEP">
+    <div id="vIuBJUlBaDwVYVWt" style="padding-top:48.18181818%;transform:rotate(0deg);">
+    <div id="RC42s7YrKQezNgic" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="Kngwd5jIYTUFUNKO" style="width:100%;opacity:1.0;height:100%;">
+    <div id="ZuLEdKwxHpHdJsbf" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="S6hm7rBEaWNQFrGB" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/aa9b7866e9c14deb8ef6c6ad56ce2b6f.svg" alt="School Books" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="tX50wjLhNzlUwKlp">
+    <div id="ixkjR8hZUsTK8MIJ" style="padding-top:255.81395349%;transform:rotate(0deg);">
+    <div id="ysCtM0rQFrxEeunH" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="hQLU883E98FvBqkQ" style="width:100%;opacity:1.0;height:100%;">
+    <div id="FA6fWj4Q5nExquDc" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="KIRhyLoxLgEd2vtL" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/6134b919591766247fb3a86ea03f5b97.svg" alt="Handdrawn Loose Doodle High Striker Game" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="bZ3LbSCrxNRzCWYZ">
+    <div id="F6wljeARQAg6BApH" style="padding-top:131.57894737%;transform:rotate(0deg);">
+    <div id="RSmFq1k8XQivp79I" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="d87x4eTEasg2zamM" style="width:100%;opacity:1.0;height:100%;">
+    <div id="UFAlBLNRl6XAZ0zk" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="tpjUDiCNHg2sYO14" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/16cee85aef54668196ee2d27cea2c157.svg" alt="Handdrawn Loose Doodle Ticket Booth" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="ybhKLrT8d9sOLZju">
+    <div id="d0fpPi8rOjqq92eI" style="padding-top:128.80562061%;transform:rotate(0deg);">
+    <div id="b0OwkaJEYwmh1MbT" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="lBEkELeE0dK6oOSg" style="width:100%;opacity:1.0;height:100%;">
+    <div id="MPopGKKBPqo1a4jb" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="uejAjr3QKO5Twa5c" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/809e6813247c5c20ab6a87845c5d4df4.svg" alt="School Globe" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="wtSpMCMn6qPcKUiG">
+    <div id="CrvgVFB8SxqmdLps" style="padding-top:55.33550322%;transform:rotate(0deg);">
+    <div id="gEEzWBAEkgNbl5ln" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="JMr341Ti8psg4n6g" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="di3LKWHmaSuLCbRk" style="color:#202f5a;font-family:YAD7Qybjw1I-0;line-height:1.04em;text-align:center;"><span id="RNSzidmAvGNAzwkT" style="color:#202f5a;">DTUni</span></p>
+    <p id="w3v077f0pf9XPMG8" style="text-transform:none;color:#202f5a;letter-spacing:0em;font-family:YAD7Qybjw1I-0;line-height:1.04em;text-align:center;"><span id="zgSEcFF7SVoifDXb" style="color:#202f5a;">Maps</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="HPu6qCxEO26kfVTu">
+    <div id="VN5YJnapkx6uKeY3" style="padding-top:57.75%;transform:rotate(0deg);">
+    <div id="Ta3rvawB8xQJ5OSt" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="ZPt2qEpPZlrEvA8I" style="width:100%;opacity:1.0;height:100%;">
+    <div id="CPFf9W6FL3zFvOSn" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="skHo226yqrM603jC" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/4851a58ec078f61f3129db68d0a6cb3e.svg" alt="Hand drawn circle" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="hdB3MS0hJ6Z0MBgg">
+    <div id="YniRCicQTDTcOrKb" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="q1YXbkC71GvgRsAf" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="ErlUr0IbvussHI5u" style="text-transform:none;color:#202f5a;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;text-align:center;"><h2 id="Hd7gcWU7ftbXptn2" style="color:#202f5a;">Bản đồ số Trường Đại học Duy Tân</h2><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="XM9cG2PJmJm1ZILv">
+    <div id="NTenORmTR6h86CAM" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <a id="AxVudj2yIagx9XkX" href="https://apps.apple.com/us/app/dtunimaps/id1624466766" style="pointer-events:all;">
+    <svg id="MZ51TpJg0RkjZNP5" viewBox="0 0 161.4662 52.0" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="yVrgYxNreCoXCUpC" style="transform:scale(1, 1);">
+    <path id="sMWKVLsfiITkry0v" d="M151.6661964814856,51.999996948242185 L9.800000190734863,51.999996948242185 C4.400000095367432,51.999996948242185 0.0,47.60000305175781 0.0,42.19999389648437 L0.0,9.800000190734863 C0.0,4.400000095367432 4.400000095367432,0.0 9.800000190734863,0.0 L151.66621174027466,0.0 C157.06620563675904,0.0 161.46621479203247,4.400000095367432 161.46621479203247,9.800000190734863 L161.46621479203247,42.200009155273435 C161.46621479203247,47.60000305175781 157.06620563675904,52.00001220703125 151.66621174027466,52.00001220703125" style="fill:#ffffff;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </a>
+    </div>
+    </div>
+    <div id="kmR8U86IudNIoPNU" style="pointer-events:none;">
+    <div id="CFokjUc8YZcxArov" style="padding-top:116.27906977%;transform:rotate(0deg);">
+    <div id="l04ygt19uj5j3rLY" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="DmBf8y9VO57AxfcN" style="width:100%;opacity:1.0;height:100%;">
+    <div id="tkHDJttDmgiTWHUU" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="aYVquqNW2Siw3lfz" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/0d74ce16bf738c4abab9e96f3c83707e.svg" alt="Apple" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="H44U8tF3J2Dvshwp" style="pointer-events:none;">
+    <div id="Rewc6vx9CtYlxKMg" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="F9vPfWNyh6h88dr2" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+    <p id="jD0goUVtvHopMRgn" style="color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;"><span id="XPmRHanZ92j5FzzJ" style="color:#000000;">Get it on the</span><br></p>
+    <p id="QbBunnJPKgxuflp2" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;direction:ltr;"><span id="t4MhUBPVTmSJIj6Y" style="color:#000000;font-weight:700;">App Store</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="AR27147rm6iFDDxT">
+    <div id="VK9eziVe2HSgVWMc" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="KPMB52XeMYGzGfuu" viewBox="0 0 161.4662 52.0" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="YodOVcxz0BCQOgMO" style="transform:scale(1, 1);">
+    <path id="fhWYM5LWeE3IzR5j" d="M151.6661964814856,51.999996948242185 L9.800000190734863,51.999996948242185 C4.400000095367432,51.999996948242185 0.0,47.60000305175781 0.0,42.19999389648437 L0.0,9.800000190734863 C0.0,4.400000095367432 4.400000095367432,0.0 9.800000190734863,0.0 L151.66621174027466,0.0 C157.06620563675904,0.0 161.46621479203247,4.400000095367432 161.46621479203247,9.800000190734863 L161.46621479203247,42.200009155273435 C161.46621479203247,47.60000305175781 157.06620563675904,52.00001220703125 151.66621174027466,52.00001220703125" style="fill:#ffffff;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="Xq47e1pX6OcqzKjr">
+    <div id="hUsKN82dOOKfnpWn" style="padding-top:111.33603239%;transform:rotate(0deg);">
+    <div id="pVqFnFmDmFX08arE" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="KU7gzriafyb93LrZ" style="width:100%;opacity:1.0;height:100%;">
+    <div id="hJIMYmPxn9bfmhgs" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="uadTp9bZRbApXvzr" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/0ff0695dcef5a8a2083bd53e2f273037.svg" alt="playstore" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="zpW4CpXVZkCZqDIg">
+    <div id="v1J2BPD1DapKqn9i" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="gJlQqAlbQATjoDZa" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+    <p id="YcUpOnoTo8Fxs6C6" style="color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;"><span id="hrmGdGQ01MRIia7Z" style="color:#000000;">Get it on</span><br></p>
+    <p id="gsK85yX00L6E4s6E" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;direction:ltr;"><span id="iiRBytUpbywqDJ8K" style="color:#000000;font-weight:700;">Google Play</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="DyBG55tpu0bQHRY9" style="z-index:0;overflow:hidden;display:grid;margin-top:-1px;position:relative;align-items:center;">
+    <div id="tnFz71HE0QTSel5k" style="background-color:#f6cece;transform:scale(1, 1);overflow:hidden;width:100%;opacity:1.0;height:100%;top:0%;left:0%;position:absolute;">
+    </div>
+    <div id="CpG5zecKxHsBEZ6k">
+    <div id="J9ZclKKmjIyv5y5v">
+    <div id="rbML9TV82Z0g9iPU" style="padding-top:68.05157593%;transform:rotate(0deg);">
+    <div id="vC31oJLJfqFolxSv" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="R4qvt06I6WPB8NM9" style="width:100%;opacity:1.0;height:100%;">
+    <div id="y8uKWQO71G7K7HHc" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="yhxHErOM36xfcSiK" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/2a8bc7420728d37de6489b8420d24dee.svg" alt="Handdrawn Loose Doodle Spinning Ride" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="HoADafepF18qJnQF">
+    <div id="SZPIYyiRjUBnibVi" style="padding-top:16.01077327%;transform:rotate(0deg);">
+    <div id="zCL7k5OCzTH83JgJ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="MQd6TChPJefeDzJ8" viewBox="0 0 1469.5411 235.2849" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="avlUypJf1kJvNweP" style="transform:scale(1, 1);">
+    <path id="Maou4NmZQ7n34XHm" d="M1459.7411328299524,232.78489683144267 L9.800000190734863,232.78489683144267 C5.800000190734863,232.78489683144267 2.5,229.48489377968485 2.5,225.48489377968485 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L1459.6411419852259,2.5 C1463.6411419852259,2.5 1466.9411450369837,5.800000190734863 1466.9411450369837,9.800000190734863 L1466.9411450369837,225.3849029349583 C1467.0411358817103,229.48489377968485 1463.7411328299524,232.78489683144267 1459.7411328299524,232.78489683144267" style="fill:#ffd83f;opacity:1.0;">
+    </path>
+    <path id="Kqk5FQnsuu7bl7Hg" d="M1459.7411328299524,4.699999809265137 C1462.5411358817103,4.699999809265137 1464.841138933468,7.0 1464.841138933468,9.800000190734863 L1464.841138933468,225.48490903847392 C1464.841138933468,228.28491209023173 1462.5411358817103,230.58489988320048 1459.7411328299524,230.58489988320048 L9.800000190734863,230.58489988320048 C7.000000476837158,230.58489988320048 4.700000286102295,228.28491209023173 4.700000286102295,225.48490903847392 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L1459.7411480887415,4.699999809265137 M1459.7411480887415,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,225.48490903847392 C0.0,230.8849029349583 4.400000095367432,235.28491209023173 9.800000190734863,235.28491209023173 L1459.7411480887415,235.28491209023173 C1465.1411419852259,235.28491209023173 1469.5411511404993,230.8849029349583 1469.5411511404993,225.48490903847392 L1469.5411511404993,9.800000190734863 C1469.5411511404993,4.400000095367432 1465.1411419852259,0.0 1459.7411480887415,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    <div id="dILdQnzE1alo8hbJ">
+    <div id="EeDyZ1dAoSpM6x2D" style="padding-top:13.63429916%;transform:rotate(0deg);">
+    <div id="cWnGQm63FtYAT6K1" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="h2q3dZFT8ge3jgfF" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+    <p id="Gh4hWBTLkF8hWeRJ" style="text-transform:uppercase;color:#000000;letter-spacing:0em;font-family:YAE359pArE0-0;line-height:1.1em;text-align:center;"><span id="K7VPAc6y5cHj6UUH" style="color:#000000;font-weight:700;">tính năng</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="nfhRG8u5TzOpZlXT">
+    <div id="NCKrxFgsTFZySKQ8" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="kgWZCBH0FxXe4Bta" viewBox="0 0 754.7342 1097.2873" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="WklWYwRFC0IpbS5F" style="transform:scale(1, 1);">
+    <path id="vfnhWa5upkr88CdW" d="M744.9341990718831,1094.787259415404 L9.800000190734863,1094.787259415404 C5.800000190734863,1094.787259415404 2.5,1091.487256363646 2.5,1087.487256363646 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L744.8342082271565,2.5 C748.8342082271565,2.5 752.1342112789143,5.800000190734863 752.1342112789143,9.800000190734863 L752.1342112789143,1087.3872655189195 C752.2342021236409,1091.487256363646 748.9341990718831,1094.787259415404 744.9341990718831,1094.787259415404" style="fill:#fffbe0;opacity:1.0;">
+    </path>
+    <path id="kN7r5HUhi3U8KkaE" d="M744.9341990718831,4.699999809265137 C747.7342021236409,4.699999809265137 750.0342051753987,7.0 750.0342051753987,9.800000190734863 L750.0342051753987,1087.4872716224352 C750.0342051753987,1090.287274674193 747.7342021236409,1092.5872624671617 744.9341990718831,1092.5872624671617 L9.800000190734863,1092.5872624671617 C7.000000476837158,1092.5872624671617 4.700000286102295,1090.287274674193 4.700000286102295,1087.4872716224352 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L744.9342143306721,4.699999809265137 M744.9342143306721,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,1087.4872716224352 C0.0,1092.8872655189195 4.400000095367432,1097.287274674193 9.800000190734863,1097.287274674193 L744.9342143306721,1097.287274674193 C750.3342082271565,1097.287274674193 754.73421738243,1092.8872655189195 754.73421738243,1087.4872716224352 L754.73421738243,9.800000190734863 C754.73421738243,4.400000095367432 750.3342082271565,0.0 744.9342143306721,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="qLDa30J9Q7oQcy2S">
+    <div id="mIrHYUYNSAuJ2MSU" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="jM9TawNpESl1tzco" viewBox="0 0 654.6276 599.0607" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="H5eunoq06zj19qVM" style="transform:scale(1, 1);">
+    <path id="Z3WgcD6tp9ksKsrg" d="M644.8276052346048,596.5606792395545 L9.800000190734863,596.5606792395545 C5.800000190734863,596.5606792395545 2.5,593.2606761877967 2.5,589.2606761877967 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L644.7276143898782,2.5 C648.7276143898782,2.5 652.027617441636,5.800000190734863 652.027617441636,9.800000190734863 L652.027617441636,589.1606853430701 C652.1276082863626,593.2606761877967 648.8276052346048,596.5606792395545 644.8276052346048,596.5606792395545" style="fill:#000000;opacity:1.0;">
+    </path>
+    <path id="coo5cL0oAQ3bGE0X" d="M644.8276052346048,4.699999809265137 C647.6276082863626,4.699999809265137 649.9276113381204,7.0 649.9276113381204,9.800000190734863 L649.9276113381204,589.2606914465857 C649.9276113381204,592.0606944983435 647.6276082863626,594.3606822913123 644.8276052346048,594.3606822913123 L9.800000190734863,594.3606822913123 C7.000000476837158,594.3606822913123 4.700000286102295,592.0606944983435 4.700000286102295,589.2606914465857 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L644.8276204933939,4.699999809265137 M644.8276204933939,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,589.2606914465857 C0.0,594.6606853430701 4.400000095367432,599.0606944983435 9.800000190734863,599.0606944983435 L644.8276204933939,599.0606944983435 C650.2276143898782,599.0606944983435 654.6276235451517,594.6606853430701 654.6276235451517,589.2606914465857 L654.6276235451517,9.800000190734863 C654.6276235451517,4.400000095367432 650.2276143898782,0.0 644.8276204933939,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="iw5EcYNkmlSZmvPy">
+    <div id="mlCPORFPk63gi2AM" style="padding-top:91.37543731%;transform:rotate(0deg);">
+    <div id="dvIOQeLvFLOGbvWX" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="et5l1mbKfkuJQZYV" style="width:100%;opacity:1.0;height:100%;">
+    <div id="BEQuYDr59BFBjvH1" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="ylDy5HE7pUURKycS" style="transform: rotate(0deg); top: -47.3274%; left: 0%; width: 100%; position: relative; opacity: 1; height: 194.655%;">
+    <img src="images/4575931779bc8c171ff22f884d310897.png" alt="" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="Vs5l6WhKy4viyVsV">
+    <div id="dYBwrGzPq8Z7A4rT" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="pVz4EG1aFgSLRxnc" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="Y019cnW4h2S8qjUK" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="ThFZsdGLokRS4ncn" style="color:#000000;font-weight:700;">Định vị vị trí hiện tại</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="kFrqCSJAyU2wIorG">
+    <div id="XJQq5U6qipOqVJKX" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="clkrzy8s1GB67N95" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="jj2pkM6jvFAaNfH9" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="nnHplNdEbohDFIkS" style="color:#000000;">Cho phép tìm kiếm và tra cứu thông tin các địa điểm trong nhà trường, xác định vị trí hiện tại bằng GPS...</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="nSXpjFzYJdCS9Bb6">
+    <div id="MEHtGqrXLfkK2yap" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="mi6SM1Ljdi3IbijH" viewBox="0 0 754.7342 1097.2873" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="Hzn0OJA7m8NxZZXv" style="transform:scale(1, 1);">
+    <path id="u1EvdasvU0RYHnqp" d="M744.9341990718831,1094.7872594154042 L9.800000190734863,1094.7872594154042 C5.800000190734863,1094.7872594154042 2.5,1091.4872563636463 2.5,1087.4872563636463 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L744.8342082271565,2.5 C748.8342082271565,2.5 752.1342112789143,5.800000190734863 752.1342112789143,9.800000190734863 L752.1342112789143,1087.3872655189198 C752.2342021236409,1091.4872563636463 748.9341990718831,1094.7872594154042 744.9341990718831,1094.7872594154042" style="fill:#fffbe0;opacity:1.0;">
+    </path>
+    <path id="EoMAHM7i9Udel3oH" d="M744.9341990718831,4.699999809265137 C747.7342021236409,4.699999809265137 750.0342051753987,7.0 750.0342051753987,9.800000190734863 L750.0342051753987,1087.4872716224354 C750.0342051753987,1090.2872746741932 747.7342021236409,1092.587262467162 744.9341990718831,1092.587262467162 L9.800000190734863,1092.587262467162 C7.000000476837158,1092.587262467162 4.700000286102295,1090.2872746741932 4.700000286102295,1087.4872716224354 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L744.9342143306721,4.699999809265137 M744.9342143306721,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,1087.4872716224354 C0.0,1092.8872655189198 4.400000095367432,1097.2872746741932 9.800000190734863,1097.2872746741932 L744.9342143306721,1097.2872746741932 C750.3342082271565,1097.2872746741932 754.73421738243,1092.8872655189198 754.73421738243,1087.4872716224354 L754.73421738243,9.800000190734863 C754.73421738243,4.400000095367432 750.3342082271565,0.0 744.9342143306721,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="aKygKtHOhL6PaW1f">
+    <div id="Ux9PJEvKje9Ar1Xk" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="a8SJ7GTwpckGCryg" viewBox="0 0 654.6276 599.0607" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="dnQ7OT3v3O8V9XGU" style="transform:scale(1, 1);">
+    <path id="RDHMakw7XtbigHWy" d="M644.8276052346048,596.5606792395545 L9.800000190734863,596.5606792395545 C5.800000190734863,596.5606792395545 2.5,593.2606761877967 2.5,589.2606761877967 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L644.7276143898782,2.5 C648.7276143898782,2.5 652.027617441636,5.800000190734863 652.027617441636,9.800000190734863 L652.027617441636,589.1606853430701 C652.1276082863626,593.2606761877967 648.8276052346048,596.5606792395545 644.8276052346048,596.5606792395545" style="fill:#000000;opacity:1.0;">
+    </path>
+    <path id="hLEdBbDlRaqswhCB" d="M644.8276052346048,4.699999809265137 C647.6276082863626,4.699999809265137 649.9276113381204,7.0 649.9276113381204,9.800000190734863 L649.9276113381204,589.2606914465857 C649.9276113381204,592.0606944983435 647.6276082863626,594.3606822913123 644.8276052346048,594.3606822913123 L9.800000190734863,594.3606822913123 C7.000000476837158,594.3606822913123 4.700000286102295,592.0606944983435 4.700000286102295,589.2606914465857 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L644.8276204933939,4.699999809265137 M644.8276204933939,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,589.2606914465857 C0.0,594.6606853430701 4.400000095367432,599.0606944983435 9.800000190734863,599.0606944983435 L644.8276204933939,599.0606944983435 C650.2276143898782,599.0606944983435 654.6276235451517,594.6606853430701 654.6276235451517,589.2606914465857 L654.6276235451517,9.800000190734863 C654.6276235451517,4.400000095367432 650.2276143898782,0.0 644.8276204933939,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="UpGfWF0x6VbF5v3w">
+    <div id="AQ6EMhxGxZXQ04zP" style="padding-top:91.37543731%;transform:rotate(0deg);">
+    <div id="oC9mfTB55qMinSUd" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="cB9wo1JiuV3zUJuj" style="width:100%;opacity:1.0;height:100%;">
+    <div id="v1HK8USzuspWauPe" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="YZYJuvHeNnYQjebm" style="transform: rotate(0deg); top: -47.3274%; left: 0%; width: 100%; position: relative; opacity: 1; height: 194.655%;">
+    <img src="images/a4946284768b9a4f1c68a8dfa9481a47.png" alt="" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="s7WZObVbygjAb0eh">
+    <div id="qyrg37bJR4IsePYv" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="e4lNlxU7RpKOvVm5" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="a9TDz6EgPq2kpW4p" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="eq3sFamhKzvQZPGk" style="color:#000000;font-weight:700;">Tìm phòng học</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="TJShzrN2iPD03sj4">
+    <div id="JglXV1L12ZRq0E0j" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="voZaI8W5twwdLVS2" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="sZs573kchSkSVQfz" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="il7RCYhSwLhh9oOD" style="color:#000000;">Tính năng chỉ dẫn đường đi giúp bạn dễ dàng tìm ra tuyến đường ngắn nhất đến địa điểm mà bạn muốn.</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="DO0oUSCz2pJ0JNta">
+    <div id="iUb6JlgTIWJbAtRw" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="lX8FjjRrlNb76biw" viewBox="0 0 754.7342 1097.2873" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="GOr2llVxA2xPIkyi" style="transform:scale(1, 1);">
+    <path id="tQiJbOz7nm7TjEJ8" d="M744.9341990718831,1094.7872594154042 L9.800000190734863,1094.7872594154042 C5.800000190734863,1094.7872594154042 2.5,1091.4872563636463 2.5,1087.4872563636463 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L744.8342082271565,2.5 C748.8342082271565,2.5 752.1342112789143,5.800000190734863 752.1342112789143,9.800000190734863 L752.1342112789143,1087.3872655189198 C752.2342021236409,1091.4872563636463 748.9341990718831,1094.7872594154042 744.9341990718831,1094.7872594154042" style="fill:#fffbe0;opacity:1.0;">
+    </path>
+    <path id="ygES6v3TD85EbpXM" d="M744.9341990718831,4.699999809265137 C747.7342021236409,4.699999809265137 750.0342051753987,7.0 750.0342051753987,9.800000190734863 L750.0342051753987,1087.4872716224354 C750.0342051753987,1090.2872746741932 747.7342021236409,1092.587262467162 744.9341990718831,1092.587262467162 L9.800000190734863,1092.587262467162 C7.000000476837158,1092.587262467162 4.700000286102295,1090.2872746741932 4.700000286102295,1087.4872716224354 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L744.9342143306721,4.699999809265137 M744.9342143306721,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,1087.4872716224354 C0.0,1092.8872655189198 4.400000095367432,1097.2872746741932 9.800000190734863,1097.2872746741932 L744.9342143306721,1097.2872746741932 C750.3342082271565,1097.2872746741932 754.73421738243,1092.8872655189198 754.73421738243,1087.4872716224354 L754.73421738243,9.800000190734863 C754.73421738243,4.400000095367432 750.3342082271565,0.0 744.9342143306721,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="WLZIEU8glO1IsJk4">
+    <div id="JHlgzsOztLol9FE4" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="F10YfP2zCnogwXZP" viewBox="0 0 654.6276 599.0607" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="YMa9hLchOI9dESjQ" style="transform:scale(1, 1);">
+    <path id="urXsTwRSrs9OLGfM" d="M644.8276052346048,596.5606792395545 L9.800000190734863,596.5606792395545 C5.800000190734863,596.5606792395545 2.5,593.2606761877967 2.5,589.2606761877967 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L644.7276143898782,2.5 C648.7276143898782,2.5 652.027617441636,5.800000190734863 652.027617441636,9.800000190734863 L652.027617441636,589.1606853430701 C652.1276082863626,593.2606761877967 648.8276052346048,596.5606792395545 644.8276052346048,596.5606792395545" style="fill:#000000;opacity:1.0;">
+    </path>
+    <path id="u6XNkTd7Nn9IlCHN" d="M644.8276052346048,4.699999809265137 C647.6276082863626,4.699999809265137 649.9276113381204,7.0 649.9276113381204,9.800000190734863 L649.9276113381204,589.2606914465857 C649.9276113381204,592.0606944983435 647.6276082863626,594.3606822913123 644.8276052346048,594.3606822913123 L9.800000190734863,594.3606822913123 C7.000000476837158,594.3606822913123 4.700000286102295,592.0606944983435 4.700000286102295,589.2606914465857 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L644.8276204933939,4.699999809265137 M644.8276204933939,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,589.2606914465857 C0.0,594.6606853430701 4.400000095367432,599.0606944983435 9.800000190734863,599.0606944983435 L644.8276204933939,599.0606944983435 C650.2276143898782,599.0606944983435 654.6276235451517,594.6606853430701 654.6276235451517,589.2606914465857 L654.6276235451517,9.800000190734863 C654.6276235451517,4.400000095367432 650.2276143898782,0.0 644.8276204933939,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="kCikM3abbT06MzqW">
+    <div id="YoAB67ImK8tvfLd0" style="padding-top:91.37543731%;transform:rotate(0deg);">
+    <div id="isfm2oRQmo3XRe5D" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="sXwKPCVBfA7lCJ59" style="width:100%;opacity:1.0;height:100%;">
+    <div id="oIivCRaK3S1RU2Vj" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="PTncae2FqBBlOcxG" style="transform: rotate(0deg); top: -47.3274%; left: 0%; width: 100%; position: relative; opacity: 1; height: 194.655%;">
+    <img src="images/6d3167b6ec7f250dd71eaa14332a8adf.png" alt="" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="lPlgvjAnXwydnBay">
+    <div id="nVVYsEHVJGtCUpLQ" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="D3hJIwgm2gGyCgN0" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="JSbQasOWQfwbm8eE" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="xXhQ2ZzAS65hAsRt" style="color:#000000;font-weight:700;">Khám phá 360</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="XX13BwZHHxsE68WA">
+    <div id="WdiygIXrStjJaZts" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="KYW2a2iA8kdWXc44" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="PCrq1kT9FrzVjg7b" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="kluLaXL4SEWO9HpD" style="color:#000000;">Khám phá trường Đại học Duy Tân trên ứng dụng di động bằng hình ảnh 360</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="cy52FuxMrxwkM554" style="z-index:0;overflow:hidden;display:grid;margin-top:-1px;position:relative;align-items:center;">
+    <div id="PBh5u8cWCLSdaJ9n" style="background-color:#6cb74e;transform:scale(1, 1);overflow:hidden;width:100%;opacity:1.0;height:100%;top:0%;left:0%;position:absolute;">
+    </div>
+    <div id="f2oUWsrp7VEIgSFt">
+    <div id="oxzV99wJNioquqbk">
+    <div id="oakjjHFqdGFoq6pj" style="padding-top:152.35457064%;transform:rotate(0deg);">
+    <div id="mPSBiIsQsfdeydSj" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="z7I6Bn5tP8unJsbd" style="width:100%;opacity:1.0;height:100%;">
+    <div id="ti3a7VmZYm4XPwTo" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="K2vTVaaBgythtbhi" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/67e1c157a3b1479f0af49298191af0f5.svg" alt="Handdrawn Loose Doodle Happy Girl" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="Jio1foEv7aW2aEtL">
+    <div id="JG4y0HvaUXb4S7Q8" style="padding-top:16.01077327%;transform:rotate(0deg);">
+    <div id="pWjYZBiXcnVpQzpb" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="ElKwnLYEbQX3LR8C" viewBox="0 0 1469.5411 235.2849" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="vxk2g8AxBAsRoCwp" style="transform:scale(1, 1);">
+    <path id="FjQTn2yAfq3FByeq" d="M1459.7411328299524,232.78489683144267 L9.800000190734863,232.78489683144267 C5.800000190734863,232.78489683144267 2.5,229.48489377968485 2.5,225.48489377968485 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L1459.6411419852259,2.5 C1463.6411419852259,2.5 1466.9411450369837,5.800000190734863 1466.9411450369837,9.800000190734863 L1466.9411450369837,225.3849029349583 C1467.0411358817103,229.48489377968485 1463.7411328299524,232.78489683144267 1459.7411328299524,232.78489683144267" style="fill:#ffd83f;opacity:1.0;">
+    </path>
+    <path id="VH9R9yr3HpKNZaTN" d="M1459.7411328299524,4.699999809265137 C1462.5411358817103,4.699999809265137 1464.841138933468,7.0 1464.841138933468,9.800000190734863 L1464.841138933468,225.48490903847392 C1464.841138933468,228.28491209023173 1462.5411358817103,230.58489988320048 1459.7411328299524,230.58489988320048 L9.800000190734863,230.58489988320048 C7.000000476837158,230.58489988320048 4.700000286102295,228.28491209023173 4.700000286102295,225.48490903847392 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L1459.7411480887415,4.699999809265137 M1459.7411480887415,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,225.48490903847392 C0.0,230.8849029349583 4.400000095367432,235.28491209023173 9.800000190734863,235.28491209023173 L1459.7411480887415,235.28491209023173 C1465.1411419852259,235.28491209023173 1469.5411511404993,230.8849029349583 1469.5411511404993,225.48490903847392 L1469.5411511404993,9.800000190734863 C1469.5411511404993,4.400000095367432 1465.1411419852259,0.0 1459.7411480887415,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    <div id="CK1EcXld2WRaWnXu">
+    <div id="t0REUxgTXJ78dDTA" style="padding-top:10.43279815%;transform:rotate(0deg);">
+    <div id="F2RGPdDNx7LpIsxt" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="HmdbMP1dw3ucTJMA" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+    <p id="cVqUqW3KEcs5Wfrg" style="text-transform:uppercase;color:#000000;letter-spacing:0em;font-family:YAE359pArE0-0;line-height:1.1em;text-align:center;"><span id="Ju0n24hXoqmM9Say" style="color:#000000;font-weight:700;">đối tượng sử dụng</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="b8qK8PkeWUkCId8L">
+    <div id="zpSWqQ5dAZkmq1HV" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="cjipezkx0v40VclJ" viewBox="0 0 791.0484 1123.3562" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="nea0NT7jQ7U3wQ7x" style="transform:scale(1, 1);">
+    <path id="wLC9MDXCzA85tFnt" d="M781.2483573413367,1120.8561570996833 L9.800000190734863,1120.8561570996833 C5.800000190734863,1120.8561570996833 2.5,1117.5561540479255 2.5,1113.5561540479255 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L781.1483664966102,2.5 C785.1483664966102,2.5 788.448369548368,5.800000190734863 788.448369548368,9.800000190734863 L788.448369548368,1113.456163203199 C788.5483603930945,1117.5561540479255 785.2483573413367,1120.8561570996833 781.2483573413367,1120.8561570996833" style="fill:#fffbe0;opacity:1.0;">
+    </path>
+    <path id="HH9KEKdMbsXGkCxG" d="M781.2483573413367,4.699999809265137 C784.0483603930945,4.699999809265137 786.3483634448523,7.0 786.3483634448523,9.800000190734863 L786.3483634448523,1113.5561693067145 C786.3483634448523,1116.3561723584723 784.0483603930945,1118.656160151441 781.2483573413367,1118.656160151441 L9.800000190734863,1118.656160151441 C7.000000476837158,1118.656160151441 4.700000286102295,1116.3561723584723 4.700000286102295,1113.5561693067145 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L781.2483726001258,4.699999809265137 M781.2483726001258,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,1113.5561693067145 C0.0,1118.956163203199 4.400000095367432,1123.3561723584723 9.800000190734863,1123.3561723584723 L781.2483726001258,1123.3561723584723 C786.6483664966102,1123.3561723584723 791.0483756518836,1118.956163203199 791.0483756518836,1113.5561693067145 L791.0483756518836,9.800000190734863 C791.0483756518836,4.400000095367432 786.6483664966102,0.0 781.2483726001258,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="SiBToO1f2deT2VbI">
+    <div id="FO8weWnIRhRkmMDI" style="padding-top:26.03784898%;transform:rotate(0deg);">
+    <div id="NZnulEtFmvrZcsgm" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="ApkN5jXPhyuAZZP2" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="AgFLSZWF41WQaTai" style="color:#000000;letter-spacing:-0.02em;font-family:YAD7QhG2T6o-0;line-height:1.15em;"><span id="WFvON0slpy4mnMKf" style="color:#000000;font-weight:700;">Sinh viên,</span></p>
+    <p id="RYh88TLsAgIx3dzd" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAD7QhG2T6o-0;line-height:1.15em;direction:ltr;text-align:left;"><span id="bIKwMCcjdPAMv9K4" style="color:#000000;font-weight:700;">Tân sinh viên</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="x2rgLjchaPwpgZ2w">
+    <div id="v2qHnqJD1gutlV98" style="padding-top:68.62538109%;transform:rotate(0deg);">
+    <div id="OvJrr31WXsmsbiD3" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="hG6a5NpRgdB2EpAv" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="K4vlJgiRD1YNsbbt" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.3em;"><span id="FKzSmT53zTlpxf4J" style="color:#000000;">Là vị “Cứu tinh” của tân sinh viên, các bạn sẽ dễ dàng tìm kiếm khu giảng đường cũng như thông tin và vị trí của các phòng chức năng.</span><br></p>
+    <p id="g2SZufRqloT8UudM" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.3em;"><br></p>
+    <p id="d0CYzonFAGTDwz6d" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.3em;"><span id="D6Q5V25gUMI9jVOS" style="color:#000000;font-weight:700;">DTUniMaps</span><span id="BydkPYoOWcuQys7q" style="color:#000000;"> hỗ trợ sinh viên cập nhật nhanh thông tin và tra cứu chính xác địa điểm mình muốn đến.</span></p>
+    <p id="tRIGeSwXWvPym61j" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.3em;"><br></p>
+    <p id="ubw46uAin6eVEaBo" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.3em;direction:ltr;text-align:left;"><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="z4ZtBjfHayK86xkC">
+    <div id="vfvMA9QwnISQYxFU" style="padding-top:52.82742111%;transform:rotate(0deg);">
+    <div id="E8Z4OlnH74ksMj9l" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="i099KQ9LbzQmur7k" viewBox="0 0 654.6276 345.8229" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="fhluubHjK5C0tq5f" style="transform:scale(1, 1);">
+    <path id="LDGYr3QuJdOUd6Er" d="M644.8276052346048,343.32288191050935 L9.800000190734863,343.32288191050935 C5.800000190734863,343.32288191050935 2.5,340.02287885875154 2.5,336.02287885875154 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L644.7276143898782,2.5 C648.7276143898782,2.5 652.027617441636,5.800000190734863 652.027617441636,9.800000190734863 L652.027617441636,335.922888014025 C652.1276082863626,340.02287885875154 648.8276052346048,343.32288191050935 644.8276052346048,343.32288191050935" style="fill:#000000;opacity:1.0;">
+    </path>
+    <path id="ME7XG2s5pL1FSLfh" d="M644.8276052346048,4.699999809265137 C647.6276082863626,4.699999809265137 649.9276113381204,7.0 649.9276113381204,9.800000190734863 L649.9276113381204,336.0228941175406 C649.9276113381204,338.8228971692984 647.6276082863626,341.12288496226716 644.8276052346048,341.12288496226716 L9.800000190734863,341.12288496226716 C7.000000476837158,341.12288496226716 4.700000286102295,338.8228971692984 4.700000286102295,336.0228941175406 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L644.8276204933939,4.699999809265137 M644.8276204933939,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,336.0228941175406 C0.0,341.422888014025 4.400000095367432,345.8228971692984 9.800000190734863,345.8228971692984 L644.8276204933939,345.8228971692984 C650.2276143898782,345.8228971692984 654.6276235451517,341.422888014025 654.6276235451517,336.0228941175406 L654.6276235451517,9.800000190734863 C654.6276235451517,4.400000095367432 650.2276143898782,0.0 644.8276204933939,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    <div id="Z9JVV56dA06HROOu">
+    <div id="YR2zeUFRK3MHWnXM" style="padding-top:52.03102184%;transform:rotate(0deg);">
+    <div id="CdqiOfoppS40yh8N" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="JTpAeOwcVSGV7lqf" style="width:100%;opacity:1.0;height:100%;">
+    <div id="dTi156maPwhvqvDr" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="D8ZxuuSgUsAyGiZu" style="transform: rotate(0deg); top: -14.1444%; left: 0%; width: 100%; position: relative; opacity: 1; height: 128.289%;">
+    <img src="images/4284eba0e122db9c92f37685ca4e5a74.jpg" alt="Asian students" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="a4TV8wJjXvvNzQj7">
+    <div id="a7Zk2l4xgz3EAx1S" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="ZS5pG5KmMXqyfdIY" viewBox="0 0 1101.6247 1123.3562" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="cyNSy34rwF4FUsDn" style="transform:scale(1, 1);">
+    <path id="YwFM59ItJ4447SJE" d="M1091.8247297829455,1120.8561570996833 L9.800000190734863,1120.8561570996833 C5.800000190734863,1120.8561570996833 2.5,1117.5561540479255 2.5,1113.5561540479255 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L1091.724738938219,2.5 C1095.724738938219,2.5 1099.0247419899767,5.800000190734863 1099.0247419899767,9.800000190734863 L1099.0247419899767,1113.456163203199 C1099.1247328347033,1117.5561540479255 1095.8247297829455,1120.8561570996833 1091.8247297829455,1120.8561570996833" style="fill:#fffbe0;opacity:1.0;">
+    </path>
+    <path id="mYDB5np76EUwEgQY" d="M1091.8247297829455,4.699999809265137 C1094.6247328347033,4.699999809265137 1096.9247358864611,7.0 1096.9247358864611,9.800000190734863 L1096.9247358864611,1113.5561693067145 C1096.9247358864611,1116.3561723584723 1094.6247328347033,1118.656160151441 1091.8247297829455,1118.656160151441 L9.800000190734863,1118.656160151441 C7.000000476837158,1118.656160151441 4.700000286102295,1116.3561723584723 4.700000286102295,1113.5561693067145 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L1091.8247450417346,4.699999809265137 M1091.8247450417346,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,1113.5561693067145 C0.0,1118.956163203199 4.400000095367432,1123.3561723584723 9.800000190734863,1123.3561723584723 L1091.8247450417346,1123.3561723584723 C1097.224738938219,1123.3561723584723 1101.6247480934924,1118.956163203199 1101.6247480934924,1113.5561693067145 L1101.6247480934924,9.800000190734863 C1101.6247480934924,4.400000095367432 1097.224738938219,0.0 1091.8247450417346,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="isAQOv5dXkv7KnZh">
+    <div id="zQOr7885i845CpZu" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="DICr6j6gVKXmh77N" viewBox="0 0 946.0916 413.8086" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="cO1paY5TdhAJTSjC" style="transform:scale(1, 1);">
+    <path id="n9ya9cCCCYYWQ1rI" d="M936.2915855259621,411.308598521547 L9.800000190734863,411.308598521547 C5.800000190734863,411.308598521547 2.5,408.0085954697892 2.5,404.0085954697892 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L936.1915946812355,2.5 C940.1915946812355,2.5 943.4915977329933,5.800000190734863 943.4915977329933,9.800000190734863 L943.4915977329933,403.90860462506265 C943.5915885777199,408.0085954697892 940.2915855259621,411.308598521547 936.2915855259621,411.308598521547" style="fill:#000000;opacity:1.0;">
+    </path>
+    <path id="hvcqBcB3V94L3Q26" d="M936.2915855259621,4.699999809265137 C939.0915885777199,4.699999809265137 941.3915916294777,7.0 941.3915916294777,9.800000190734863 L941.3915916294777,404.0086107285783 C941.3915916294777,406.8086137803361 939.0915885777199,409.10860157330484 936.2915855259621,409.10860157330484 L9.800000190734863,409.10860157330484 C7.000000476837158,409.10860157330484 4.700000286102295,406.8086137803361 4.700000286102295,404.0086107285783 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L936.2916007847512,4.699999809265137 M936.2916007847512,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,404.0086107285783 C0.0,409.40860462506265 4.400000095367432,413.8086137803361 9.800000190734863,413.8086137803361 L936.2916007847512,413.8086137803361 C941.6915946812355,413.8086137803361 946.091603836509,409.40860462506265 946.091603836509,404.0086107285783 L946.091603836509,9.800000190734863 C946.091603836509,4.400000095367432 941.6915946812355,0.0 936.2916007847512,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="rrRgKTjoYflCOCSw">
+    <div id="KpCof1IhsbEunhpe" style="padding-top:43.16856101%;transform:rotate(0deg);">
+    <div id="EZO5wZZz2bZwxESB" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="SikkMne6ibYCb6dY" style="width:100%;opacity:1.0;height:100%;">
+    <div id="k78uITY7GySMN1n2" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="aFLgGepmKfb1Nr5w" style="transform: rotate(0deg); top: -27.1684%; left: 0%; width: 100%; position: relative; opacity: 1; height: 154.337%;">
+    <img src="images/9012047106f4255969c607a995f2fbbd.jpg" alt="A Class Having a Recitation" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="HLMxRyD52xpAGw9a">
+    <div id="oQ17wcomFKKYqEia" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="biZIM9LCK5OLpdvq" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="uovBnoHOWHl8MDjL" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAD7QhG2T6o-0;line-height:1.15em;direction:ltr;text-align:left;"><span id="NUHEyEfwGOlJd6tW" style="color:#000000;font-weight:700;">Giảng viên</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="wSZTGTjlnccjL9Fl">
+    <div id="yVPOfCavooMYHJXJ" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="sJF5x7X4RrUN1mR9" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="p83ty5VbWKE9vI8s" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.3em;"><span id="jMhq6m9Sv3fDdlxt" style="color:#000000;">Ứng dụng giúp giảm thiểu thời gian tìm đường cho các thầy cô giữa các cơ sở và các phòng học tại các giảng đường của trường Đại học Duy Tân.</span><br></p>
+    <p id="mvHk3AKVOznjxJNJ" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.3em;direction:ltr;text-align:left;"><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="oPTZST0txb8iH5Nv">
+    <div id="B8fZJDDtFS7y5LWV" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="IRYt95k9W3pUnpkQ" viewBox="0 0 791.0484 1123.3562" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="YFyhq5UrCN8ORBN5" style="transform:scale(1, 1);">
+    <path id="hzvvRZia9nQDTMQB" d="M781.2483573413367,1120.8561570996833 L9.800000190734863,1120.8561570996833 C5.800000190734863,1120.8561570996833 2.5,1117.5561540479255 2.5,1113.5561540479255 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L781.1483664966102,2.5 C785.1483664966102,2.5 788.448369548368,5.800000190734863 788.448369548368,9.800000190734863 L788.448369548368,1113.456163203199 C788.5483603930945,1117.5561540479255 785.2483573413367,1120.8561570996833 781.2483573413367,1120.8561570996833" style="fill:#fffbe0;opacity:1.0;">
+    </path>
+    <path id="c2s0z3xD46U3gh0g" d="M781.2483573413367,4.699999809265137 C784.0483603930945,4.699999809265137 786.3483634448523,7.0 786.3483634448523,9.800000190734863 L786.3483634448523,1113.5561693067145 C786.3483634448523,1116.3561723584723 784.0483603930945,1118.656160151441 781.2483573413367,1118.656160151441 L9.800000190734863,1118.656160151441 C7.000000476837158,1118.656160151441 4.700000286102295,1116.3561723584723 4.700000286102295,1113.5561693067145 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L781.2483726001258,4.699999809265137 M781.2483726001258,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,1113.5561693067145 C0.0,1118.956163203199 4.400000095367432,1123.3561723584723 9.800000190734863,1123.3561723584723 L781.2483726001258,1123.3561723584723 C786.6483664966102,1123.3561723584723 791.0483756518836,1118.956163203199 791.0483756518836,1113.5561693067145 L791.0483756518836,9.800000190734863 C791.0483756518836,4.400000095367432 786.6483664966102,0.0 781.2483726001258,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="uVA7uLROY5LrPh9W">
+    <div id="GCtIDIPFzSsQE9kE" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="yxXZQ0PEAr4OLMev" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="brAED8Zi4aIvTiH5" style="color:#000000;letter-spacing:-0.02em;font-family:YAD7QhG2T6o-0;line-height:1.15em;"><span id="Ys5dfewlO7XY15rr" style="color:#000000;font-weight:700;">Khách tham quan,</span></p>
+    <p id="mgV6DdDM8fJxE1An" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAD7QhG2T6o-0;line-height:1.15em;direction:ltr;text-align:left;"><span id="mifPIs9u7dzrDhyW" style="color:#000000;font-weight:700;">Phụ huynh</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="OlkYf7PcxyHfjStJ">
+    <div id="AF1Q1Hsn3MlQhOZ5" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="folKSJSVcQFRKYdo" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="Ea6bm2RujGeZpCmU" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.3em;direction:ltr;text-align:left;"><span id="nkK0xNdrjZAhsii0" style="color:#000000;">Không cần tốn thời gian vào việc hỏi đường và tra cứu bản đồ thủ công, Ứng dụng giúp những người chưa từng đến trường cũng có thể khám phá tất cả cơ sở vật chất của trường Đại học Duy Tân mà không cần đến trực tiếp.</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="GILwH28p1qXJJ5o3">
+    <div id="I3GPUE6Fb9jYOY6U" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="lbOEkYE8c756u3hJ" viewBox="0 0 654.6276 345.8229" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="K8vicMUAuOI0xnhx" style="transform:scale(1, 1);">
+    <path id="n2OUuEGuQR6awu6T" d="M644.8276052346048,343.32288191050935 L9.800000190734863,343.32288191050935 C5.800000190734863,343.32288191050935 2.5,340.02287885875154 2.5,336.02287885875154 L2.5,9.800000190734863 C2.5,5.800000190734863 5.800000190734863,2.5 9.800000190734863,2.5 L644.7276143898782,2.5 C648.7276143898782,2.5 652.027617441636,5.800000190734863 652.027617441636,9.800000190734863 L652.027617441636,335.922888014025 C652.1276082863626,340.02287885875154 648.8276052346048,343.32288191050935 644.8276052346048,343.32288191050935" style="fill:#000000;opacity:1.0;">
+    </path>
+    <path id="TtthgeOLSheXDv6j" d="M644.8276052346048,4.699999809265137 C647.6276082863626,4.699999809265137 649.9276113381204,7.0 649.9276113381204,9.800000190734863 L649.9276113381204,336.0228941175406 C649.9276113381204,338.8228971692984 647.6276082863626,341.12288496226716 644.8276052346048,341.12288496226716 L9.800000190734863,341.12288496226716 C7.000000476837158,341.12288496226716 4.700000286102295,338.8228971692984 4.700000286102295,336.0228941175406 L4.700000286102295,9.800000190734863 C4.699999809265137,7.0 7.0,4.699999809265137 9.800000190734863,4.699999809265137 L644.8276204933939,4.699999809265137 M644.8276204933939,0.0 L9.800000190734863,0.0 C4.400000095367432,0.0 0.0,4.400000095367432 0.0,9.800000190734863 L0.0,336.0228941175406 C0.0,341.422888014025 4.400000095367432,345.8228971692984 9.800000190734863,345.8228971692984 L644.8276204933939,345.8228971692984 C650.2276143898782,345.8228971692984 654.6276235451517,341.422888014025 654.6276235451517,336.0228941175406 L654.6276235451517,9.800000190734863 C654.6276235451517,4.400000095367432 650.2276143898782,0.0 644.8276204933939,0.0" style="fill:#000000;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="tR445FC5GSV3EGnF">
+    <div id="mhihiAddt2a7pIpC" style="padding-top:52.03102184%;transform:rotate(0deg);">
+    <div id="r4aABx49ksEvGQVw" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="nJ7BRlqnsOP62vOK" style="width:100%;opacity:1.0;height:100%;">
+    <div id="NSrws0JCdoUNuh9q" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="gpmhXBV2XNVkrJtG" style="transform:rotate(0deg);top:-14.02430477%;left:0%;width:100%;position:relative;opacity:1.0;height:128.04860954%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/b297951aafa35fafa1439e7c44c2972a.jpg" alt="Photo Of People Looking On Laptop" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="etGmGZu9hCjag0AI" style="z-index:0;overflow:hidden;display:grid;margin-top:-1px;position:relative;align-items:center;">
+    <div id="jlcmHb8UVuynzEmc" style="background-color:#d3efa4;transform:scale(1, 1);overflow:hidden;width:100%;opacity:1.0;height:100%;top:0%;left:0%;position:absolute;">
+    </div>
+    <div id="GdwbTExhCyYtC6Nm">
+    <div id="RDvXIKxPXEuuVX8k">
+    <div id="k03HYuxjhPfmO1US" style="padding-top:78.88944459%;transform:rotate(0deg);">
+    <div id="AiFtFFoF2IoZWS8p" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="fGaYo2lLWVGSlAd6" viewBox="0 0 71.3044 56.2517" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="MRQivR42gTSbjCpv" style="transform:scale(1, 1);">
+    <path id="obHBiMmnNxOlx3x6" d="M70.60444135391442,2.700000047683716 C70.5044352503988,2.4000000953674316 70.5044352503988,2.1000001430511475 70.5044352503988,1.7000000476837158 C70.5044352503988,0.6000000238418579 70.20444745743005,0.20000004768371582 69.10444135391442,0.10000002384185791 C67.24920023671542,2.2351741790771484E-8 66.01804611032775,-0.29999998211860657 64.83818550650543,0.10000002384185791 C62.63236052153102,0.7000000476837158 60.47783688660904,0.800000011920929 58.27201190163464,0.800000011920929 C54.93762766289035,0.800000011920929 51.65454477419848,0.5 48.320160535454185,0.4000000059604645 C46.678615177364726,0.30000001192092896 45.088371169327694,0.30000001192092896 43.446829724981754,0.4000000059604645 C41.651392057965595,0.4000000059604645 39.90725182725834,0.6000000238418579 38.11181416024218,0.7000000476837158 C36.77806124749317,0.800000011920929 35.49560577105306,0.7000000476837158 34.16185090143229,1.0 C32.828097988683275,1.3000000715255737 27.031399626548314,1.3000000715255737 25.697644756927545,1.2000000476837158 C24.87687403475458,1.100000023841858 22.20936625238479,1.4000000953674316 21.388595530211823,1.4000000953674316 C20.311331755879074,1.4000000953674316 19.18277054523742,1.5 18.10550872777643,1.4000000953674316 C16.82305325133632,1.3000000715255737 15.540597774896206,1.2000000476837158 14.258142298456093,1.7000000476837158 C12.97568682201598,2.200000047683716 11.693231345575867,2.200000047683716 10.410775869135755,2.0 C9.077021977950862,1.8000000715255737 7.794566501510749,1.7000000476837158 6.460813099543796,1.600000023841858 C5.640041398934948,1.4000000953674316 4.767971772799259,1.3000000715255737 3.0999951362609863,1.3000000715255737 C2.0999999046325684,1.2000000476837158 1.100000023841858,1.100000023841858 0.0,1.0 C0.0,1.600000023841858 0.0,2.0 0.0,2.299999952316284 C0.6000000238418579,5.8273314798233775 0.30000001192092896,8.14247978404014 0.20000000298023224,9.964235927573935 C0.10000000149011612,11.254646333187235 0.20000000298023224,12.507104066439034 0.20000000298023224,13.797514472052333 C0.30000001192092896,14.97406541277948 0.4000000059604645,16.150615629605802 0.5,17.32716729423377 C0.6000000238418579,18.465764838698593 0.5,19.604362383163412 0.6000000238418579,20.742959927628235 C0.7000000476837158,22.48880891668697 0.800000011920929,24.23465935354735 0.9000000357627869,25.980508342606086 C0.9000000357627869,26.625713907363142 0.9000000357627869,51.5989545408662 0.9000000357627869,52.24415576221832 C0.9000000357627869,53.551685621038786 1.2000000476837158,53.851673414007536 2.5,54.15167646576535 C3.4000000953674316,54.351673414007536 4.300000190734863,54.551685621038786 4.973167144041171,54.65167646576535 C7.0763940764811615,54.75168256928097 9.179620764312183,54.851673414007536 11.282847941361144,54.851673414007536 C11.744531717192407,54.851673414007536 12.206216471459552,54.851673414007536 12.667900247290817,54.851673414007536 C14.155548404274171,54.95167951752316 15.591898146512746,55.25168256928097 17.07954728193198,55.051685621038786 C18.669792268404898,54.851673414007536 20.311335669622594,54.95167951752316 21.901579677659626,55.051685621038786 C23.79961417416535,55.15167646576535 32.058626659690965,55.15167646576535 33.95666115619669,55.15167646576535 C35.54690712110548,55.25168256928097 37.13715112914252,55.15167646576535 38.72739513717955,55.25168256928097 C39.90725574100186,55.25168256928097 41.087112431080655,55.45167951752316 42.26697303490296,55.351673414007536 C44.729289115165386,55.351673414007536 47.19160128168429,55.15167646576535 49.65391736194672,55.25168256928097 C53.39868500490573,55.351673414007536 57.14345656160827,55.65167646576535 60.88822420456729,55.851673414007536 C62.1193822446985,55.95167951752316 63.35054028482971,55.851673414007536 64.58169832496093,55.75168256928097 C65.65896014242192,55.65167646576535 66.73622195988291,55.65167646576535 67.80444593155114,56.15167646576535 C68.80445356094567,56.351673414007536 69.50445050918786,55.851673414007536 69.60444135391442,54.75168256928097 C69.70444745743005,53.551685621038786 69.80445356094567,52.351673414007536 69.80445356094567,51.826673470638504 C70.00445050918786,50.536262341124385 70.20444745743005,24.917816142864268 70.40444440567224,23.627405013350142 C70.50445050918786,23.13401158584074 70.50445050918786,22.64061960613298 70.50445050918786,22.18518029878672 C70.60444135391442,20.894770617074244 70.70444745743005,19.60435948756012 70.80445356094567,18.275995685684496 C70.90444440567224,16.75786562639807 70.90444440567224,15.277688963373965 70.90444440567224,13.759558904087537 C70.90444440567224,13.266166924379776 71.00445050918786,12.772774944672017 71.00445050918786,12.317335637325758 C71.00445050918786,11.064878627974785 70.90444440567224,9.850374290985313 71.00445050918786,8.597916919683927 C71.30445356094567,7.307508323822686 71.60444135391442,5.48575218028889 70.60444135391442,2.700000047683716" style="fill:#fbf3e4;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    <div id="cdo1Li7oibc6kCfk">
+    <div id="OeggnQ2QwPFyLepS" style="padding-top:196.42857143%;transform:rotate(0deg);">
+    <div id="dGThkcnnhfvB61te" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="Dd9yQHp71oKwS7mK" style="width:100%;opacity:1.0;height:100%;">
+    <div id="ZRJLOZExZ8RXiJo5" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="R4q8BAv0eWxuWYJq" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/d6a3205d2729a6e2507f2fd3c6ed5d64.svg" alt="Handdrawn Loose Doodle Girl" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="jQbPzxps3O86SOrs">
+    <div id="tBzZOovSijJeL2ZX" style="padding-top:152.35457064%;transform:rotate(0deg);">
+    <div id="SSSXxcQ8L4OSyqKY" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="AdiW2Rmm4XggWt3B" style="width:100%;opacity:1.0;height:100%;">
+    <div id="BG0vJeVA6FV5d9Ms" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="C4knGmu9jcyzsDO3" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/391f3f67aa852eaa14ccf57f51fbcec4.svg" alt="Handdrawn Loose Doodle Happy Girl" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="HdPOVOpny7stjVfI">
+    <div id="zbmQR2hXHHRPhutS" style="padding-top:96.25%;transform:rotate(0deg);">
+    <div id="ln70P1CsAickC5j3" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="ciC28AOlH4Ns372K" style="width:100%;opacity:1.0;height:100%;">
+    <div id="dL9hrqpdSYWXc4x1" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="E5I7aWtctogQF319" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/38a3fe4125ec6352eed01298545d2c49.svg" alt="Abstract shapes" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="fDhVYKRgwfXM3DXD">
+    <div id="m6lC3aRO2jXSNqrX" style="padding-top:128.80562061%;transform:rotate(0deg);">
+    <div id="gi8uNlL4BjixIZcu" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="HX19tRGXMLvebSAW" style="width:100%;opacity:1.0;height:100%;">
+    <div id="opKsy5dsIWj1ZhwJ" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="RUI9f0lX2csocwv7" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/809e6813247c5c20ab6a87845c5d4df4.svg" alt="School Globe" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="DYV2sa9IxrYBG2o7">
+    <div id="sDOKlFpfCY6xYO7A" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="Znz251P1tEOwKvPJ" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="LNU61hRfk1O1CwpS" style="margin-left:0em;text-transform:none;color:#202f5a;letter-spacing:0em;font-family:YAD7Qybjw1I-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="zMCwgXTTEz7XR22T" style="color:#202f5a;">Tải ngay</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="io75Tc6I9Mq0Knz1">
+    <div id="Ke7Hzh1RjCfk1EjV" style="padding-top:5.125%;transform:rotate(0deg);">
+    <div id="soSiksLPNEdBAm7e" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="KNu2VjWL7gaSS8Xw" style="width:100%;opacity:1.0;height:100%;">
+    <div id="ZbqYSjUKjesU0DCR" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="Kkf2L8zYbdEqz9IT" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/b3a165ad2aca04015697b52b230381f8.svg" alt="Hand-drawn line element" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="SxeI3zP13KJ2quVm">
+    <div id="Bw6JSX9E8zK2Hq0z" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <a id="Aa2T87zXIFdpLI9Y" href="https://apps.apple.com/us/app/dtunimaps/id1624466766" style="pointer-events:all;">
+    <svg id="r1tqMllNrL8dvqC9" viewBox="0 0 161.4662 52.0" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="fD6hKB9G0F7UYCns" style="transform:scale(1, 1);">
+    <path id="vLJbv8w6WVj0eLd6" d="M151.6661964814856,51.999996948242185 L9.800000190734863,51.999996948242185 C4.400000095367432,51.999996948242185 0.0,47.60000305175781 0.0,42.19999389648437 L0.0,9.800000190734863 C0.0,4.400000095367432 4.400000095367432,0.0 9.800000190734863,0.0 L151.66621174027466,0.0 C157.06620563675904,0.0 161.46621479203247,4.400000095367432 161.46621479203247,9.800000190734863 L161.46621479203247,42.200009155273435 C161.46621479203247,47.60000305175781 157.06620563675904,52.00001220703125 151.66621174027466,52.00001220703125" style="fill:#ffffff;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </a>
+    </div>
+    </div>
+    <div id="HsElEWyyar7HEhsh" style="pointer-events:none;">
+    <div id="tAdQDspPnxpY6XTr" style="padding-top:116.27906977%;transform:rotate(0deg);">
+    <div id="adyqmMSmPEXmoQwh" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="Ks7rGq6lOakG0DuW" style="width:100%;opacity:1.0;height:100%;">
+    <div id="DCttf8OEsRQMGKEk" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="Qi7ZYomLorxWVveu" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/0d74ce16bf738c4abab9e96f3c83707e.svg" alt="Apple" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="QeF4Qj0wa3o5M1Ql" style="pointer-events:none;">
+    <div id="v8SCsPLqNgpnGhI2" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="SfjMwyXRoiaTXSZg" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+    <p id="BxsPl3exYAQdAod4" style="color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;"><span id="v6iK70h1UIqsXmmb" style="color:#000000;">Get it on the</span><br></p>
+    <p id="OL70D7oZE4FZPtRV" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;direction:ltr;"><span id="tsmPFmImJDeuMsHE" style="color:#000000;font-weight:700;">App Store</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="KZoXCTHQ1tEWtYe1">
+    <div id="IgGVrkZsDtgsrBnf" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <svg id="YYjM9BHK0YRvl66q" viewBox="0 0 161.4662 52.0" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="WEqqk1ycnHeiOrA2" style="transform:scale(1, 1);">
+    <path id="DUyIZPqvvhkIBD70" d="M151.6661964814856,51.999996948242185 L9.800000190734863,51.999996948242185 C4.400000095367432,51.999996948242185 0.0,47.60000305175781 0.0,42.19999389648437 L0.0,9.800000190734863 C0.0,4.400000095367432 4.400000095367432,0.0 9.800000190734863,0.0 L151.66621174027466,0.0 C157.06620563675904,0.0 161.46621479203247,4.400000095367432 161.46621479203247,9.800000190734863 L161.46621479203247,42.200009155273435 C161.46621479203247,47.60000305175781 157.06620563675904,52.00001220703125 151.66621174027466,52.00001220703125" style="fill:#ffffff;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div id="WorkXdqCQETMf3g8">
+    <div id="IsAcz07yCaIxWF5u" style="padding-top:111.33603239%;transform:rotate(0deg);">
+    <div id="VDb7gAo4tYpE5JxZ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="M2RynuYZyPwOC3iI" style="width:100%;opacity:1.0;height:100%;">
+    <div id="qVPpl0XQR1EqAflQ" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="Fr8YZqZQ7Z59rj3v" style="transform: rotate(0deg); top: 0%; left: 0%; width: 100%; position: relative; opacity: 1; height: 100%;">
+    <img src="images/0ff0695dcef5a8a2083bd53e2f273037.svg" alt="playstore" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="gJ6LGmuf56bKqd4U">
+    <div id="xy6iNGqq61yTZ5pW" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="W92iVGr3kuZyTNec" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+    <p id="ZZJSPdHEhgYQxcIs" style="color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;"><span id="a52XN9gqqL5vTfZ7" style="color:#000000;">Get it on</span><br></p>
+    <p id="ZSl3RTxaDTtay0av" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:-0.02em;font-family:YAEnXHTFXhg-0;line-height:1.1em;direction:ltr;"><span id="gDAfCVEFUCWO53RI" style="color:#000000;font-weight:700;">Google Play</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="nVjkCr19qvWmyOAf" style="z-index:0;overflow:hidden;display:grid;margin-top:-1px;position:relative;align-items:center;">
+    <div id="gZpjURoCAdAIidUd" style="background-color:#f75454;transform:scale(1, 1);overflow:hidden;width:100%;opacity:1.0;height:100%;top:0%;left:0%;position:absolute;">
+    </div>
+    <div id="psdxHjCXJH7d8iYR">
+    <div id="fPSQTuSWGwc8DmkY">
+    <div id="vFtUkCarm8f2ZCzW" style="padding-top:12.18181818%;transform:rotate(0deg);">
+    <div id="ZbjPn9l7wYntBRN9" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="zAxrHlQrvVSFFj6X" style="width:100%;opacity:1.0;height:100%;">
+    <div id="vI59PJwnRWZMBe1a" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="wHtruKMhKwOnf5T3" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/92433d9c395bee97f234fae103850b3c.svg" alt="Minimalist UI Search Element" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="u886FE9AsqkkKGs7">
+    <div id="JNAKnKHJgKIMFcJF" style="padding-top:8.40907166%;transform:rotate(0deg);">
+    <div id="xpWOIQt345iPbMVD" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="C1PblSEHuNI3aOEB" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="z3u7XmL3mZJOcIrC" style="text-transform:uppercase;color:#000000;letter-spacing:0.025em;font-family:YAE359pArE0-0;line-height:1.4em;"><span id="ye27hTywP23MzNOA" style="color:#000000;font-weight:700;">Liên hệ</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="E2EqqUr8M9EV3u7A">
+    <div id="pnr8Gh6cuOwzRFQ6" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <a id="lAmmTakajgtOEoK2" href="https://www.facebook.com/dtunimaps">
+    <div id="nP7uvIdVY3hsEDrs" style="width:100%;opacity:0.0;height:100%;">
+    <div id="HhsCIYUlRYVYYQOH" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div id="prYS9X2CiDOJkhRh" style="pointer-events:none;">
+    <div id="JnsUAQIuCgvwFhiB" style="padding-top:28.54545455%;transform:rotate(0deg);">
+    <div id="lGsjzRh2tAu2xbXc" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="FzdHPofGXwUTbGvT" style="width:100%;opacity:1.0;height:100%;">
+    <div id="Ypv51WvNkFGXg3PG" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="a3AqvT8fMDlH1DRR" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/641ff8210b045116351e00e4d6c0795e.svg" alt="Minimalist UI Rounded Rectangle Element" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="mWeahhZyOkoKnkH1" style="pointer-events:none;">
+    <div id="iESweFZPQ6yFWpCX" style="padding-top:28.54545455%;transform:rotate(0deg);">
+    <div id="WofVTIjQ3VaO90f3" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="G9aG2iTSHM6R1oZg" style="width:100%;opacity:1.0;height:100%;">
+    <div id="JK5DbQimTLmJ47Xr" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="dITaAv6fTeBEpJMf" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/10c1467f15537fdbfc1c4a28eebcde61.svg" alt="Minimalist UI Rounded Rectangle Element" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="O2VYDoIOBgKOI3ET" style="pointer-events:none;">
+    <div id="h2kDrGxvcSUxXpv7" style="padding-top:10.05805398%;transform:rotate(0deg);">
+    <div id="v0WHFyzSkBw35p8w" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="q3ipXbA0gnlAzWvz" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="byI5aOk8wYFRIrSm" style="text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;"><span id="hrbtWeGPYfCALJ3b" style="color:#000000;">Fanpage</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="csUwmxx4kF5aCcU4">
+    <div id="v5FHJQBDRqvC41SY" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <a id="S7u0XrmYQrZqYQj0" href="https://www.facebook.com/huynhphuoc2000" style="pointer-events:all;">
+    <svg id="BjUkDHpxTznZzYqQ" viewBox="0 0 121.9314 132.0988" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="qtkqSbvX9WUshs4v" style="transform:scale(1, 1);">
+    <path id="h2R9FwSMy66lMOTH" d="M112.1314042267753,132.09878129629908 L9.800000190734863,132.09878129629908 C4.400000095367432,132.09878129629908 0.0,127.69878739981469 0.0,122.29877824454125 L0.0,9.800000190734863 C0.0,4.400000095367432 4.400000095367432,0.0 9.800000190734863,0.0 L112.13141948556436,0.0 C117.53141338204874,0.0 121.93142253732218,4.400000095367432 121.93142253732218,9.800000190734863 L121.93142253732218,122.29879350333032 C121.93142253732218,127.69878739981469 117.53141338204874,132.09879655508814 112.13141948556436,132.09879655508814" style="fill:#ffffff;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </a>
+    </div>
+    </div>
+    <div id="jvxMaceC9SXmug94" style="pointer-events:none;">
+    <div id="I9JrHcP05lSK1F4J" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <div id="h8a2CARxNftpFaui" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="AFGu8N3QkBvVEE9D" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="Co5Cq3fo4RxvgbCf" style="color:#000000;">Phuoc Huynh</span><br></p>
+    </div>
+    </div>
+    </div>
+    <div id="Xp8kFxxBXprLjyTc" style="pointer-events:none;">
+    <div id="VUkHq80d3alZ7bHq" style="padding-top:99.9996%;transform:rotate(0deg);">
+    <div id="WWufRHbdPdh9WBfC" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="vsjiJMI1zhpnuQi7" viewBox="0 0 500.0 499.998" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="i6JttOSD4DnPrHUx" style="transform:scale(1, 1);">
+    <g id="P4Mv8Ork4Q4HDLzt" style="clip-path:url(#nK3FT9ezejvOL7ws);">
+    <clipPath id="nK3FT9ezejvOL7ws">
+    <path d="M500.0,250.0019989013672 C500.0,388.06700134277344 388.0690002441406,499.9980010986328 250.0,499.9980010986328 C111.92900085449219,499.9980010986328 0.0,388.06700134277344 0.0,250.0019989013672 C0.0,111.93000030517578 111.92900085449219,0.0 250.0,0.0 C388.0709991455078,0.0 500.0,111.93000030517578 500.0,250.0019989013672">
+    </path>
+    </clipPath>
+    <g id="qzlfPEanvSiYrVUu" style="transform:scale(1, 1);transform-origin:250px 250px;">
+    <image id="tX3jJj6D68lhFYWU" href="images/e22aa75229d0bf7ac7c2c2aed9a345b2.jpg" width="750.18014945px" height="499.998px" preserveAspectRatio="none" style="transform:translate(-125.09007473px, 0px) rotate(0deg);transform-origin:375.09007473px 249.999px;opacity:1.0;">
+    </image>
+    </g>
+    </g>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    <div id="wEfI0Ivg0ZltLc90">
+    <div id="tycrPFTXQc3ADVMn" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+    <a id="s5fJNCvtBrdC8S7e" href="https://www.facebook.com/dtunimaps" style="pointer-events:all;">
+    <div id="t2JGEGcZEZWAfurk" style="width:100%;opacity:0.0;height:100%;">
+    <div id="iiweJiFJgRpawtNj" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div id="euLAI5qMH2QjksMl" style="pointer-events:none;">
+    <div id="iuEfE9BTNfFjZ1ou" style="padding-top:133.17191283%;transform:rotate(-180deg);">
+    <div id="IaWN8ZDZsUnFQVkO" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="NoDXwbrHzajMGwrT" style="width:100%;opacity:1.0;height:100%;">
+    <div id="h9sXSMSd5Ej44O7y" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="JN9PSXNpqfTVZ2sQ" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/148725e6623fe9974cfe1054a6a690f3.svg" alt="Minimalist UI Text  Element" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="vJ9fHQ4OOZ9OvRVm" style="pointer-events:none;">
+    <div id="zqojSICxEHPNCeou" style="padding-top:100%;transform:rotate(0deg);">
+    <div id="pT6We6mFD2IL8NVC" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="cIGZt8oUgqwDdQbd" style="width:100%;opacity:1.0;height:100%;">
+    <div id="P9lHeukUuP3zioyz" style="transform:scale(1, 1);overflow:hidden;width:100%;height:100%;">
+    <div id="UWfYyZZGhGMSqAE6" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:relative;opacity:1.0;height:100%;animation:anim-pulse 1.5s ease-in-out infinite;">
+    <img src="images/1192a8841857cf0d3db3dc8bbc319f07.png" alt="" loading="lazy" style="width:100%;height:100%;">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="xir0lUF87WeRdKqg" style="pointer-events:none;">
+    <div id="qj1rtxbFfpkXg4rS" style="padding-top:16.81350306%;transform:rotate(0deg);">
+    <div id="Kn3yGP9mlTDFshku" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="G0qTKDg5STBv93ae" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="JV5OawspjICmJJrX" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><h1 id="r2sfYHcTCoo2QjwR" style="color:#000000;">DTUNIMAPS</h1><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="RwMwFPKkUsUzWfI6">
+    <div id="qB4JjT4kAqXmdD6c" style="padding-top:34.55591498%;transform:rotate(0deg);">
+    <div id="czNh4YE6znsGHrrJ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="xUrPDGtbShtzyNP2" viewBox="0 0 229.6744 79.3661" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+    <g id="X0q49ZRxlj83VzqN" style="transform:scale(1, 1);">
+    <path id="Oh3ixM50uZ83Lc7j" d="M219.87443649615557,79.36610206819232 L9.800000190734863,79.36610206819232 C4.400000095367432,79.36610206819232 0.0,74.96610817170794 0.0,69.5660990164345 L0.0,9.800000190734863 C0.0,4.400000095367432 4.400000095367432,0.0 9.800000190734863,0.0 L219.87445175494463,0.0 C225.274445651429,0.0 229.67445480670244,4.400000095367432 229.67445480670244,9.800000190734863 L229.67445480670244,69.56611427522357 C229.67445480670244,74.96610817170794 225.274445651429,79.36611732698138 219.87445175494463,79.36611732698138" style="fill:#ffffff;opacity:1.0;">
+    </path>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    <div id="if6MS93FLYoyrBno">
+    <div id="F5J6I5x7Qw6UAklU" style="padding-top:5.81664231%;transform:rotate(0deg);">
+    <div id="nNQhqljDhmJ4IYma" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="kjcaOlz26JxRf8Uy" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="csT0TqNHqOCV2Yb3" style="margin-left:0em;text-transform:uppercase;color:#000000;letter-spacing:0.05em;font-family:YACgEbQ6Yac-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="hLSxutr1a9RrZRwh" style="color:#000000;">email</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="LWHBZNKthJtSlF4B">
+    <div id="COmwFfy61mVhRvbl" style="padding-top:14.67115624%;transform:rotate(0deg);">
+    <div id="CcjGNt1pBAuESiHx" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <div id="KaG7yTRJHU197SrN" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+    <p id="BFqUq801vYXlE6r2" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.4em;text-align:center;"><span id="qypBWpgBgw0Fymdp" style="color:#000000;">Mọi thắc mắc xin gửi về hòm thư:</span></p>
+    <p id="V2sK7KN1Z58NIyUd" style="color:#000000;font-family:YAD7QhG2T6o-0;line-height:1.4em;text-align:center;"><span id="yRMumFqDyVUAHApL" style="color:#000000;font-weight:700;"><a href="mailto:support@dtunimaps.com">support@dtunimaps.com</a></span><br></p>
+    <p id="tX6rUaZARDJyR792" style="margin-left:0em;text-transform:none;color:#000000;letter-spacing:0em;font-family:YAD7QhG2T6o-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="e6aNwPzXKPI6FIWT" style="color:#000000;">Xin cảm ơn. 😘</span><br></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="P6FvNEkoLfnDE3ao">
+    <div id="uTQAqS4AUFCCVpKn" style="padding-top:0.50256292%;transform:rotate(0deg);">
+    <div id="jTXAGFO9BVnGm0oh" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+    <svg id="Yvv4PHrlhtmD6Q1o" viewBox="0 0 596.940183659186 3.0" preserveAspectRatio="none" style="overflow:visible;display:block;width:100%;min-height:1px;fill:#f66000;stroke:#f66000;height:100%;">
+    <g id="S28bZCqBJNDCKNta" style="transform:scale(3) translate(0px, 0.5px);">
+    <line x1="0" x2="198.98006122" y1="0" y2="0" style="fill:none;stroke-linecap:butt;">
+    </line>
+    </g>
+    </svg>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <script src="js/73ad2651535b7ecadd366d5fa045dc32c1cdb8fc38f8243601b62b64f4123420.js" async=""></script>
+    </div><div style="position: static !important;"></div>
+    </div></body>
+</html>
