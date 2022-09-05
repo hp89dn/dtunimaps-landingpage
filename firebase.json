@@ -1,0 +1,40 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/appstore",
+        "destination": "https://apps.apple.com/vn/app/dtunimaps/id1624466766",
+        "type": 301
+      },
+      {
+        "source": "/play",
+        "destination": "https://play.google.com/store/apps/details?id=com.phuochuynh.dtunimaps",
+        "type": 302
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/appstore",
+        "destination": "/appstore.html"
+      },
+      {
+        "source": "/play",
+        "destination": "/play.html"
+      },
+      {
+        "source": "/404",
+        "destination": "/404.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
