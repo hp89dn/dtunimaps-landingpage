@@ -26,6 +26,14 @@
     ],
     "rewrites": [
       {
+        "source": "/donate",
+        "destination": "/pro.html"
+      },
+      {
+        "source": "/pro",
+        "destination": "/pro.html"
+      },
+      {
         "source": "/privacy",
         "destination": "/privacy.html"
       },
